@@ -1,2 +1,3 @@
 # dec
-Wrapper to make litipk/php-bignumbers much easier to use 
+
+A wrapper to make [litipk/php-bignumbers](https://github.com/Litipk/php-bignumbers) much easier to use.
