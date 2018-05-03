@@ -10,12 +10,12 @@
   ],
   "require": {
     "php": ">=7.0",
-		"litipk/php-bignumbers": "^0.8.6"
+    "litipk/php-bignumbers": "^0.8.6"
   },
   "autoload": {
-		"psr-4": {
-			"Dec\\": "src/Dec/"
-		}
+    "psr-4": {
+      "Dec\\": "src/Dec/"
+    }
   },
   "require-dev": {
     "phpunit/phpunit": "^7.1"
