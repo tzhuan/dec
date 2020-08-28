@@ -121,7 +121,9 @@ class Dec
             $rm = new ReflectionMethod($class, $method);
             if ($rm->isPublic() and $rm->isStatic() === $isStatic) {
                 foreach ($rm->getParameters() as $i => $parameter) {
-                    if ((string)$parameter->getType() === D::class and
+                    $type = $parameter->getType();
+                    if ($type and
+                        $type->getName() === D::class and
                         isset($args[$i]) and
                         !($args[$i] instanceof D)) {
                         if ($args[0] instanceof static) {
